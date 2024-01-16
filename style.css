@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+#logo{
+  width: 150px;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+button.navbar-toggler {
+  background-color: white;
+}
+
+button.genres-button {
+  border: 2px rgb(85, 85, 85) solid;
+  background-color: black;
+  border-radius: 0;
+}
+
+button.genres-button::after {
+  margin-left: 20px;
+}
+
+div.icon-border {
+  border: 2px rgb(85, 85, 85) solid;
+  height: 35px;
+  width: 65px;
+}
+
+div.card {
+  background-color: unset;
+}
+
+div.netflix-img {
+  transition: 0.5s;
+}
+
+div.netflix-img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+div.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-control-next {
+  width: 80px;
+}
+
+.carousel-control-next-icon {
+  padding: 10px;
+}
+
+.carousel-control-prev {
+  width: 60px;
+}
+
+.carousel-control-prev-icon {
+  padding: 10px;
+}
+
+i.icon {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+a.servicecode-container {
+  border: 2px rgb(85, 85, 85) solid;
+}
+
+@media (max-width: 575px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+/* medium and up screens */
+@media (min-width: 768px) and (max-width: 992px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+@media (min-width: 992px){
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(16.66%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-16.66%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
