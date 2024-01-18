@@ -1,4 +1,4 @@
-let carousels = ['#trending-carousel', '#watchagain-carousel', '#newreleases-carousel'];
+let carousels = ['#movies1-carousel', '#movies2-carousel', '#movies3-carousel'];
 
 carousels.forEach((carousel) => {
     let items = document.querySelectorAll(`${carousel} > .carousel-item`);
